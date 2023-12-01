@@ -10,7 +10,7 @@ public class Priority : BaseValueObject<Priority>
 
     #region Constructors and Factories
     public static Priority FromInt(int value) => new(value);
-    public Priority(int value)
+    private Priority(int value)
     {
         if (value < 1)
         {
